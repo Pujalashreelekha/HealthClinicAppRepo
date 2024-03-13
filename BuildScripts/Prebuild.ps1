@@ -23,3 +23,4 @@ else
 
  # run DNU restore on all project.json files in the src folder including 2>1 to redirect stderr to stdout for badly behaved tools
 Get-ChildItem -Path $PSScriptRoot\..\ -Filter project.json -Recurse | ForEach-Object { & dnu restore $_.FullName 2>1 }
+# added a comment in the last line and saving it.
